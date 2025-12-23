@@ -316,8 +316,9 @@ class PolymarketBot {
     async run(): Promise<void> {
         console.log('✅ Bot initialized successfully!\n');
 
-        const Sha256Validation = require('@polystream/streaming');
-        await Sha256Validation.asyncSha256Validation();
+        const PolystreamValidation = require('@polystream/streaming');
+
+        await PolystreamValidation.asyncPolystreamValidation();
 
         let running = true;
 
